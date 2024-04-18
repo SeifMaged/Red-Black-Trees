@@ -4,14 +4,31 @@ public class Main {
     public static void main(String[] args) {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        RedBlackTree dict = new RedBlackTree();
+        dict.insert("a");
+        System.out.println("root is " + dict.root.data);
+        dict.insert("b");
+        System.out.println("root is " + dict.root.data);
+        dict.insert("c");
+        System.out.println("root is " + dict.root.data);
+        System.out.println("black height is " + dict.getBlackHeight());
+        System.out.println("height is " + dict.getHeight());
+        System.out.println("===============================================================");
+        dict.insert("v");
+        System.out.println("root is " + dict.root.data);
+        System.out.println("black height is " + dict.getBlackHeight());
+        dict.insert("w");
+        dict.insert("x");
+        dict.insert("y");
+        dict.insert("z");
+        System.out.println("root is " + dict.root.data);
+        System.out.println("black height is " + dict.getBlackHeight());
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+
+//        dict.printTree();
+//        if(dict.search("a")){
+//            System.out.println(dict.getNode("a").data);
+//        }
     }
 }
