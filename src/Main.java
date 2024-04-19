@@ -6,29 +6,29 @@ public class Main {
         // IntelliJ IDEA suggests fixing it.
         RedBlackTree dict = new RedBlackTree();
         dict.insert("a");
-        System.out.println("root is " + dict.root.data);
+        System.out.println("root is " + dict.getRoot().getData());
         dict.insert("b");
-        System.out.println("root is " + dict.root.data);
+        System.out.println("root is " + dict.getRoot().getData());
         dict.insert("c");
-        System.out.println("root is " + dict.root.data);
+        System.out.println("root is " + dict.getRoot().getData());
         System.out.println("black height is " + dict.getBlackHeight());
         System.out.println("height is " + dict.getHeight());
         System.out.println("===============================================================");
         dict.insert("v");
-        System.out.println("root is " + dict.root.data);
+        System.out.println("root is " + dict.getRoot().getData());
         System.out.println("black height is " + dict.getBlackHeight());
         dict.insert("w");
         dict.insert("x");
         dict.insert("y");
         dict.insert("z");
-        System.out.println("root is " + dict.root.data);
+        System.out.println("root is " + dict.getRoot().getData());
         System.out.println("black height is " + dict.getBlackHeight());
 
 
 
-//        dict.printTree();
+//        dict.printAll();
 //        if(dict.search("a")){
-//            System.out.println(dict.getNode("a").data);
+//            System.out.println(dict.getNode("a").getData());
 //        }
     }
 }
