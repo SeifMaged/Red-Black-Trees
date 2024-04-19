@@ -35,4 +35,27 @@ public class TreeNode {
     public boolean isRed() {
         return isRed;
     }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
+    public void setLeft(TreeNode left) {
+        this.left = left;
+    }
+
+    public void setRight(TreeNode right) {
+        this.right = right;
+    }
+
+    public void setParent(TreeNode parent) {
+        this.parent = parent;
+    }
+
+    public void colorRed() {
+        isRed = true;
+    }
+    public void colorBlack(){
+        isRed = false;
+    }
 }
