@@ -12,7 +12,8 @@ public class TreeNode {
         this.parent = parent;
         this.isRed = isRed;
     }
-    public TreeNode(String key){
+
+    public TreeNode(String key) {
         this(key, null, null, null, true);
     }
 
@@ -55,7 +56,8 @@ public class TreeNode {
     public void colorRed() {
         isRed = true;
     }
-    public void colorBlack(){
+
+    public void colorBlack() {
         isRed = false;
     }
 }
